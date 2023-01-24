@@ -1,0 +1,26 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		int num = sc.nextInt();
+		
+		for (int i = 1; i <= num; i++) {
+			int conta = i;
+			int conta2 = i * i;
+			int conta3 = i * i * i;
+			System.out.printf("%d %d %d %n", conta, conta2, conta3);
+			
+		}
+		
+		
+		sc.close();
+	}
+
+}
