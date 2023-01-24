@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		double x = 0, y = 0, z = 0, soma = 0, cont=0;
+		
+		for (int i = 1; i <= n; i++) {
+			 
+				x = sc.nextDouble();
+				x = x * 0.2;
+				y = sc.nextDouble();
+				y = y * 0.3;
+				z = sc.nextDouble();
+				z = z * 0.5;
+				cont = cont + 1;
+				soma = y + x + z;
+				System.out.printf("%.1f%n", soma);		
+										
+								
+		}
+				
+		
+		
+		
+		sc.close();
+	}
+		
+}
